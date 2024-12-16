@@ -2,7 +2,11 @@ https://www.spoj.com/status/WATER,zsrajki/
 
 ## Megoldás
 
-A megoldáshoz le kell fektetnük szabályokat, hogy a víz felülről lefelé folyik, tud azonos magasságnál szomszéd kockára folyni. A víz tud gyűlni egy tócsában, amig akkora nem lesz hogy kifollyon. És a víz ki tud szökni a sakktába szélén.
+A megoldáshoz le kell fektetnük szabályokat, hogy a víz felülről lefelé folyik, tud azonos magasságnál szomszéd kockára folyni.
+
+A víz tud gyűlni egy tócsában, amig akkora nem lesz hogy kifollyon.
+
+És a víz ki tud szökni a sakktába szélén.
 
 Víz szint mérése:
 minden cellánál a lehető legalacsonyabbra fog emelkedni
@@ -10,7 +14,8 @@ keresnünk kell cellánként szökési stratégiákat a víz számára mindenhol
 tehát a szökési útvonal és minimum magassághoz kötött a víz szintje.
 
 Sakktábla szélén nem lehet víz mert rögtön kifolyik.
-Ahoz, hogy legyen tócsa egy cellán, ahoz magas celláknek kel körül ölelnie.
+
+Ahoz, hogy legyen tócsa egy cellán, ahoz magas celláknak kel körül ölelnie.
 
 megoldás kód levezetése:
 
@@ -86,15 +91,18 @@ pq.push(Cell(newRow, newCol, max(current.height, heights[newRow][newCol])));
 
 fő számítási logika:
 
-- ha szomszádos cella alacsonyabb, oda fog folyni a víz és fel tócsa lesz ott
+- ha szomszádos cella alacsonyabb, oda fog folyni a víz és tócsa lesz ott
 - waterHeight maga a víz magassága
 - az új cella a magasság és a szomszédos cella maximumából jön ki
 
 példa erre a számolásra:
 
 Sakktábla:
+
 3 5 3 → 3~5~3 (~ víz)
+
 2 1 2 → 2~5~2
+
 3 5 3 → 3~5~3
 
 Lépésről lépésre:
