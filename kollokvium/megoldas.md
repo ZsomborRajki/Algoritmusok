@@ -10,8 +10,10 @@ A víz tud gyűlni egy tócsában, amig akkora nem lesz hogy kifollyon.
 
 Víz szint mérése:
 minden cellánál a lehető legalacsonyabbra fog emelkedni
+
 keresnünk kell cellánként szökési stratégiákat a víz számára mindenhol
-tehát a szökési útvonal és minimum magassághoz kötött a víz szintje.
+
+a szökési útvonal és minimum magassághoz kötött a víz szintje.
 
 Sakktábla szélén nem lehet víz mert rögtön kifolyik.
 
@@ -54,8 +56,10 @@ vector<vector<bool>> visited(n, vector<bool>(m, false));
 priority_queue<Cell, vector<Cell>, CompareCell> pq;
 ```
 
-BFS kereséshez készítjuk per az algoritmust
+BFS kereséshez készítjuk fel az algoritmust
+
 vannak a feldolgozott/ látogatott cellák
+
 van egy prioritásunk, ami hol a legalacsonyabb magasságokat dolgozzuk fel először,
 a víz magasról alacsonyra folyik ezért fontos a prioritás
 
