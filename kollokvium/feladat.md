@@ -23,7 +23,7 @@ The number of test cases t is in the first line of input, then t test cases foll
 
 ## Kiemnet
 
-Minden esethez egy integer számot kell visszaadni, ami a maximális vízmennyiség négyzetméterben
+Minden esethez egy integer számot kell visszaadni, ami a maximális vízmennyiség köbméterben
 
 ## Megkötés
 
