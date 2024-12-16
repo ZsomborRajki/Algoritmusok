@@ -5,7 +5,7 @@ https://www.spoj.com/problems/WATER/
 ## Feladat
 
 Egy négyszögletű sakktábla van n\*m négyzet és erre kockákat pakolunk.
-Minden kocka egy négyzetméter felületű.
+Minden kocka egy köbméter térfogatú.
 Egy sakk mezőt takar le a kocka felszíne. A kockák közvetlen egymás mellett vannak, érintkeznek, nincs köztük rés. Eső esik, és víztócsák keletkeznek az alsó kockáknál.
 
 Írjunk egy programot:
